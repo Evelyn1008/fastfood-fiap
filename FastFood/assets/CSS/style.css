@@ -8,3 +8,22 @@ header{
     top: 77px;
 	left: 563px;
 }   
+
+h1{
+	position: absolute;
+	width: 678px;
+	height: 206px;
+	left: 517px;
+	top: 355px;
+
+	font-family: 'Abril Fatface';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 50px;
+	line-height: 67px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	color: #FFFFFF;
+}
