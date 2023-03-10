@@ -16,13 +16,19 @@ html{
 }
 
 .menu {
-    background-color: aqua;
     background-image: url(../images/image.png);
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
     height: 900px;
     padding-top: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.centered {
+    margin-right: 50px;
+    font-size: 35px;
 }
 
 header {
@@ -34,31 +40,21 @@ header {
     top: 0;
     left: 0;
 }
-
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+}
 .logo {
-    float: right;
-    position: relative;
-    max-height: 100px;
-    height: 100px;
-    right: 30px;
+    max-height: 70px;
+    margin-right: 30px; 
     top: 10px;
-}
-
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding-top: 25px;
-    right: 150px;
-}
-
-
-li {
-    float: right;
-    padding-right: 100px;
-    height: 20px;
-    width: 180px;
-
 }
 
 li a {
@@ -71,15 +67,12 @@ li a {
     font-size: larger;
     background-color: orange;
     border-radius: 15px;
-
-
 }
 
-
 h1 {
-    font-family: 'Abril Fatface';
+    font-family: 'Titan One';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 100;
     font-size: 50px;
     color: white;
 
@@ -99,16 +92,6 @@ h3{
     height: 800px;
 }
 
-.centered {
-    position: fixed;
-    float: right;
-    text-align: right;
-    position: absolute;
-    top: 50%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
 
 .cardapio{
     display: flex;
@@ -117,53 +100,58 @@ h3{
     justify-content: center;
     height: 100%;
     width: 100%;
-
     border-radius: 15px;
     margin-top: 100px;
     margin-bottom: 100px;
 }
 
-.cardapio h1{
-    font-family: 'Titan One';
-
-}
 
 .lanches{
     display: flex;
     flex-direction: row;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    gap: 50px;
     font-family: 'Titan One';
-    font-weight: 100;
-    
-}
-
-.lanches h2{
-    font-size: 30px;
-    margin-right: 60px;
-    float: right;
+    font-weight: 100;   
 }
 
 .lanchesimg{
-    margin-left: 50px;
     height: 250px;
     border-radius: 100%;
 }
 
+.lanches_menu{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-family: 'Titan One';
+    font-weight: 100;
+}
+
+.lanches h2{
+    font-size: 30px;
+    text-align: end;
+    margin-right: 40px;
+}
+
+.descricao{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    flex-grow: 1;
+
+}
+
 .lanches p{
     color: white;
-    font-size: 25px;
-    margin-right: 30px;
-    margin-top: 50px;
-    margin-left: 60px;
-    float: none;
-    text-align: left;
+    font-size: 20px;
+    font-weight: 100;
+    margin-right: 40px;
+    flex-grow: 1;
+    
 }
 
 .lanches h1{
     font-size: 40px;
-    margin-right: 30px;
-    font-family: 'Titan One';   
-    margin-left: 60px;
 }
 
