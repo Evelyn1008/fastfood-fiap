@@ -29,6 +29,7 @@ html{
 .centered {
     margin-right: 50px;
     font-size: 35px;
+    text-align: center;
 }
 
 header {
@@ -114,7 +115,7 @@ h3{
 .lanches{
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 30px;
     font-family: 'Titan One';
     font-weight: 100;   
 }
