@@ -69,6 +69,11 @@ li a {
     border-radius: 15px;
 }
 
+li a:hover {
+    transform: scale(1.25);
+    color: black;
+}
+
 h1 {
     font-family: 'Titan One';
     font-style: normal;
@@ -115,8 +120,13 @@ h3{
 }
 
 .lanchesimg{
+    margin-left: 40px;
     height: 250px;
     border-radius: 100%;
+
+}
+.lanchesimg:hover{
+    animation: lanches_animation 2s ease-in-out 1s;
 }
 
 .lanches_menu{
@@ -153,5 +163,17 @@ h3{
 
 .lanches h1{
     font-size: 40px;
+}
+
+@keyframes lanches_animation {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: scale(1.25);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
 }
 
