@@ -6,28 +6,47 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Fast Food</title>
         <link rel="stylesheet" href="./assets/CSS/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
     </head>
     <body>
-        <header>
-            <img class="logo" src="./assets/images/logo.png" alt="Logo Fast Food"/>
-            <nav>
-                <ul>
-                    <li><a href="#">Fale Conosco</a></li>
-                    <li><a href="#">Promoções</a></li>
-                    <li><a href="#">Cardápio</a></li>
-                    <li><a href="#">Menu</a></li>
-                </ul>
-            </nav>
+        <nav>
+            <div id="hamburguer">
+                <div class="linha"></div>
+                <div class="linha"></div>
+                <div class="linha"></div>
+            </div>
 
-        </header>
-        <section class="menu">
-            <h1 class="centered">Quer matar aquela fome?<br>Venha para o nosso fast food</h1>
-        </section>
-        <section class="cardapio">
-            <h1>CARDAPIO</h1>
+            <ul id="menu">
+                <li>
+                    <a class="btn_menu" href="#home">
+                        <i class="fa-solid fa-house"></i>
+                        Home</a>
+                </li>
+                <li>
+                    <a class="btn_menu" href="#cardapio">
+                        <i class="fa-solid fa-utensils"></i>
+                        Cardapio</a>
+                </li>
+                <li>
+                    <a class="btn_menu" href="#promocoes">
+                        <i class="fa-solid fa-percent"></i>
+                        Promoções</a>
+                </li>
+                <li>
+                    <a class="btn_menu" href="#pedidos">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        Pedidos</a>
+                </li>
+            </ul>
+        </nav>
 
+
+        <section
+            id="home" class="principal"><!--  <h1 class="centered">Quer matar aquela fome?<br>Venha para o nosso fast food</h1> -->
         </section>
-        <section class="lanches_menu">
+        <section id="cardapio" class="lanches_menu">
+            <h1 class="title">CARDAPIO</h1>
             <div class="lanches">
                 <img class="lanchesimg" src="./assets/images/lanche1.png" alt="Barbecue Bacon">
                 <div class="descricao">
@@ -62,7 +81,8 @@
                         <img src="./assets/images/imagem1card.png" alt=""></div>
                     <div class="card-info">
                         <a href="/cupom.html" class="">Gerar Cupom</a>
-                        <p>Leve 3 Burguer Bacon e Pague 2 R$30,00 </p>
+                        <p>Leve 3 Burguer Bacon e Pague 2 R$30,00
+                        </p>
                     </div>
                 </li>
                 <li>
@@ -70,7 +90,8 @@
                         <img src="./assets/images/imagem2card.png" alt=""></div>
                     <div class="card-info">
                         <a href="/cupom.html" class="">Gerar Cupom</a>
-                        <p>Combo Salada pelo preço por R$51,00 </p>
+                        <p>Combo Salada pelo preço por R$51,00
+                        </p>
                     </div>
                 </li>
                 <li>
@@ -78,7 +99,8 @@
                         <img src="./assets/images/imagem3card.jpg" alt=""></div>
                     <div class="card-info">
                         <a href="/cupom.html" class="">Gerar Cupom</a>
-                        <p>Combo Batata Rustica por apenas R$23,00 </p>
+                        <p>Combo Batata Rustica por apenas R$23,00
+                        </p>
                     </div>
                 </li>
                 <li>
@@ -86,7 +108,8 @@
                         <img src="./assets/images/imagem1card.png" alt=""></div>
                     <div class="card-info">
                         <a href="/cupom.html" class="">Gerar Cupom</a>
-                        <p>Leve 3 Burguer Bacon e Pague 2 R$30,00 </p>
+                        <p>Leve 3 Burguer Bacon e Pague 2 R$30,00
+                        </p>
                     </div>
                 </li>
                 <li>
@@ -94,15 +117,16 @@
                         <img src="./assets/images/imagem2card.png" alt=""></div>
                     <div class="card-info">
                         <a href="/cupom.html" class="">Gerar Cupom</a>
-                        <p>Combo Salada pelo preço por R$51,00 </p>
+                        <p>Combo Salada pelo preço por R$51,00
+                        </p>
                     </div>
                 </li>
 
-                
+
             </ul>
         </section>
-        
-        <section id="section-budget">
+
+        <section id="pedidos">
             <form action="#">
                 <h4>Pedido Barbecue Bacon</h4>
                 <label for="qtde">Qtde de lanche</label>
@@ -125,15 +149,16 @@
                 </div>
                 <label for="delivery">Delivery</label>
                 <div>
-                  <input type="radio" id="delivery-sim" name="delivery">
-                  <label for="delivery-sim">&emsp;sim, preciso&emsp;&emsp;</label>
-                  <input type="radio" id="delivery-nao" name="delivery">
-                  <label for="delivery-nao">&emsp;não, não preciso</label>
+                    <input type="radio" id="delivery-sim" name="delivery">
+                    <label for="delivery-sim">&emsp;sim, preciso&emsp;&emsp;</label>
+                    <input type="radio" id="delivery-nao" name="delivery">
+                    <label for="delivery-nao">&emsp;não, não preciso</label>
                 </div>
                 <output id="preco">R$ 0,00</output>
             </form>
         </section>
         <script src="./assets/JS/script.js"></script>
+        <script src="./assets/JS/menu.js"></script>
 
     </body>
 
